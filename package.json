@@ -1,0 +1,30 @@
+{
+  "name": "csjs-extractify",
+  "version": "0.1.0",
+  "description": "Browserify plugin to extract csjs into an external css bundle",
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
+  "main": "index.js",
+  "homepage": "https://github.com/rtsao/csjs-extractify",
+  "repository": "git@github.com:rtsao/csjs-extractify.git",
+  "bugs": "https://github.com/rtsao/csjs-extractify/issues",
+  "scripts": {
+    "cover": "istanbul cover test/index.js",
+    "test": "node test/index.js",
+    "travis-test": "npm run cover && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "dependencies": {
+    "csjs": "^1.0.0-beta",
+    "require-from-string": "^1.1.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
+    "tape": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "license": "MIT"
+}
