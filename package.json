@@ -13,7 +13,7 @@
     "travis-test": "npm run cover && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "dependencies": {
-    "csjs": "^1.0.0-beta",
+    "csjs": "^1.0.0",
     "require-from-string": "^1.1.0",
     "through2": "^2.0.0"
   },
